@@ -1,19 +1,115 @@
-/* navbar */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 249, 228);
+}
+
 header {
-    background-color: #e8b395;
+    background-color: #e67e22;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: white;
+}
+
+/* Estilos para secciones */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Estilos específicos para las secciones */
+.refugio, .hogar {
+    margin-top: 20px; /* Espacio entre secciones */
+    padding: 20px; /* Espaciado interno de las secciones */
+    background-color: #f5f5f5; /* Fondo de las secciones */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* Estilos para los elementos de lista dentro de las secciones */
+.refugio .listado li, .hogar .listado li {
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-left: 20px; /* Espacio izquierdo para listas */
+    padding: 8px 0; /* Espaciado vertical en elementos de lista */
+    list-style: none; /* Elimina viñetas de las listas */
+}
+
+/* Estilos para la imagen */
+img {
+    display: block; /* Evita que la imagen tenga margen inferior */
+    margin: 0px 20px; /* Centra la imagen y agrega espacio inferior */
+    max-width: 10%; /* Cambia el valor de max-width para hacer la imagen más pequeña */
+    height: 300px; /* Mantiene la proporción de aspecto */
+}
+
+/* Estilos para el contenedor de imágenes */
+.imagen-container {
+    text-align: center; /* Centra las imágenes horizontalmente */
+    margin-top: 20px; /* Espacio entre secciones */
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 20px; /* Espaciado interno del contenedor */
+    display: flex; /* Usar flexbox para centrar verticalmente */
+    justify-content: space-around; /* Centra horizontalmente las imágenes */
+    align-items: center; /* Centra verticalmente las imágenes */
+    background-color: #f5f5f5; /* Fondo del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 50px 40px 30px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+/* Estilos para las imágenes */
+.imagen-container img {
+    width: auto; /* Ajusta el ancho automáticamente para mantener la relación de aspecto original */
+    height: auto; /* Ajusta la altura automáticamente para mantener la relación de aspecto original */
+    max-width: 20%; /* Limita el ancho máximo al 100% del contenedor */
+    max-height: 100%; /* Limita la altura máxima al 100% del contenedor */
+    border: 4px solid transparent;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+
+
+/* Estilo para las imágenes en hover */
+.imagen-container img:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% al pasar el cursor por encima */
+    border: 4px solid #e67e22; /* Agrega un marco de color naranja al pasar el cursor por encima */
+    cursor: pointer; /* Cambia el cursor al pasar el cursor por encima */
+}
+
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    background-color: #e67e22;
+    color: white;
+    padding: 1px;
+    width: auto;
+    height: auto;
 }
