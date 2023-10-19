@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;1,300 & display=swap');
+
+:root {
+  --main-font: 'Open Sans', sans-serif;
+  --backup-font: 'MyMainFont', 'Arial, serif';
+  --background-color: #e06f37;
+  --text-color: #270f02;
+  --button-background: #201f22;
+  --button-text: #e0e8e0;
+  --message-background: #f7d9ac;
+  --message-text: #762906;
+  --link-color: orange;
+}
+
+body {
+  font-family: var(--main-font), var(--backup-font);
+  margin: 0;
+  padding: 0;
+}
+
+.background-image {
+  background-image: url('../media/media-contacto/img/fondo_contacto.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: blur(5px);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-background);
+}
+
+.adopt-message {
+  background-color: var(--message-background);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.adopt-message h2 {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.adopt-message p {
+  color: var(--message-text);
+  font-size: 18px;
+}
+
+.gatito-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 0;
+}
+
+.gatito-item {
+  text-align: center;
+}
+
+.gatito-image {
+  max-width: 100%;
+  max-height: auto;
+}
+
+footer {
+  margin-top: 2.5rem;
+  background-color: #F2D5EA;
+  height: 25vh;
+  width: 100%;
+  padding: 3.125rem 0;
+  font-size: 1.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer{
+  height: 20vh;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+footer li{
+  list-style: none;
+  padding: .625rem;
+}

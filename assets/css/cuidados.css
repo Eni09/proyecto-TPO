@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVABAR */
+header{
+    height: 11.25rem;
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 9.375rem;
+    height: 9.375rem;
+    margin: .9375rem;
+    margin-left: 3.125rem ;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navBar{
+    display: flex;
+
+}
+
+.navBar ul{
+    display: flex;
+    margin: 3.125rem 0;
+
+}
+
+.navBar ul li{
+    display: flex ;
+    list-style: none;
+    padding: 1.875rem 5rem;
+}
+
+.navBar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 550;
+
+}
+
+.checkbtn, #closebtn{
+    margin: 4.0625rem 1.875rem;
+    font-size: 1.875rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.contenedorUno {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 4.375rem 4.0625rem 4.0625rem 4.0625rem;
+}
+
+.contenedorUno  img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.btn button {
+    outline: none;
+    border: none;
+    padding: .7rem 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: orange;
+}
+
+.btn button a {
+    color: white;
+}
+
+.container {
+    overflow: hidden;
+    padding: 1rem 5rem;
+}
+
+.show {
+    display: flex;
+    gap: 250px;
+}
+
+.show .text {
+    padding-top: 4rem;
+}
+
+.text h2 {
+    font-size: 4rem;
+}
+
+.text p {
+    color: #444;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem;
+    column-gap: 100px;
+    place-items: center;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+
+}
+
+.cart-cri {
+    width: 150px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.c1 {
+    background: thistle;
+}
+
+.c2 {
+    background: orange;
+}
+
+.c3 {
+    background: orangered;
+}
+
+.c4 {
+    background: cyan;
+}
+
+footer {
+    margin-top: 2.5rem;
+    background-color: #F2D5EA;
+    height: 25vh;
+    width: 100%;
+    padding: 3.125rem 0;
+    font-size: 1.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer{
+    height: 25vh;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+footer li{
+    list-style: none;
+    padding: .625rem;
+}
