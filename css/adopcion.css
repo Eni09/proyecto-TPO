@@ -8,22 +8,92 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* NAVABAR */
+header{
+    height: 11.25rem;
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 9.375rem;
+    height: 9.375rem;
+    margin: .9375rem;
+    margin-left: 3.125rem ;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navBar{
+    display: flex;
+
+}
+
+.navBar ul{
+    display: flex;
+    margin: 3.125rem 0;
+
+}
+
+.navBar ul li{
+    display: flex ;
+    list-style: none;
+    padding: 1.875rem 5rem;
+}
+
+.navBar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 550;
+
+}
+
+.checkbtn, #closebtn{
+    margin: 4.0625rem 1.875rem;
+    font-size: 1.875rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.contenedorUno {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 4.375rem 4.0625rem 4.0625rem 4.0625rem;
+}
+
+.contenedorUno  img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* MAIN */
 .contenedorDos{
-    padding: 0;
-    margin: 0;
     display: grid;
     width: 100%;
-    height: 50rem;
+    height: 46.875rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-
+    position: relative;
 }
 
 .imgUno {
     width: 100%;
-    height: 50rem;
+    height: 46.875rem;
     grid-row: 1/2;
-    position: relative;
+
 }
 
 .imgUno img{
@@ -34,23 +104,20 @@ body{
 
 .imgDos {
     width: 100%;
-    height: 50rem;
+    height: 46.875rem;
     grid-row: 1/2;
-    position: relative;
+
 }
 
 .imgDos img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-
-
 }
 
 .contenedorDos a{
     text-decoration: none;
-    background-color:  #F3825A;
+    background-color: #e9a9d7;
     color: #fafafa;
     padding: .9375rem 2.1875rem;
     border-radius: .3125rem;
@@ -64,7 +131,7 @@ body{
 }
 
 .contenedorDos a:hover{
-    background-color: #cc633c;
+    background-color: #f199d8;
 }
 
 .contenedorTres{
@@ -72,7 +139,7 @@ body{
     width: 100%;
     height: 25rem;
     display: grid;
-    grid-template-columns: repeat(2, 45vw 55vw);
+    grid-template-columns: repeat(2 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1.25rem;
 }
@@ -120,7 +187,7 @@ article h3{
     line-height: 1.8;
 }
 
-.castracion{
+.castracion, .adopcion, .red{
     height: 18.75rem;
     justify-content: center;
     display: grid;
@@ -129,6 +196,9 @@ article h3{
     gap: 15px;
     align-items: center;
 
+}
+.adopcion{
+    height: 12.5rem;
 }
 
 .castracion .huella{
@@ -139,18 +209,6 @@ article h3{
 .castracion .requisitos{
     grid-column: 2/3;
     justify-self: flex-start;
-align-items: center;
-}
-
-
-.adopcion{
-    height: 18.75rem;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 6.25rem 1fr;;
-    grid-row: 1, 1fr;
-    gap: 15px;
-    align-items: center;
 }
 
 .adopcion .huella{
@@ -160,16 +218,6 @@ align-items: center;
 
 .adopcion .requisitos{
     grid-column: 2/3;
-}
-
-.red{
-    height: 18.75rem;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 6.25rem 1fr;;
-    grid-row: 1, 1fr;
-    gap: 15px;
-    align-items: center;
 }
 
 .red .huella{
@@ -194,7 +242,141 @@ align-items: center;
     font-size: 1.25rem;
 }
 
+.cuidados{
+    width: 100%;
+}
+.cuidados h3{
+    text-align: center;
+    color:  #F3825A;
+    margin-bottom: 1.875rem;
+    align-self: center;
+}
+
+.cuidados p{
+    text-align: center;
+}
+
+footer{
+    margin-top: 2.5rem;
+    background-color: #F2D5EA;
+    height: 25vh;
+    width: 100%;
+    padding: 3.125rem 0;
+    font-size: 1.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+footer li{
+    list-style: none;
+    padding: .625rem;
+}
+
+@media (max-width: 1024px){
+    .contenedorUno{
+        display: none;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    #closebtn{
+        right: 0;
+        top: 80;
+        display: block;
+    }
+
+    .navBar{
+        background-color: #F2D5EA;
+
+    }
+
+
+    .navBar ul{
+        width: 100%;
+        height: 35vh;
+        background-color: #F2D5EA;
+        top: 80;
+        transition: all .5s;
+        flex-direction: column;
+        justify-items: center;
+        visibility: hidden;
+    }
+
+    .navBar ul li{
+        margin: 0;
+        padding: 15px;
+    }
+
+    .navBar ul li a{
+        font-size: 1rem;
+    }
+
+    #check:checked ~ * ul{
+        visibility: visible;
+    }
+
+    #check:checked ~ #closebtn {
+        display: block;
+    }
+
+}
 @media (max-width: 768px){
+    .logo{
+    height: 7.5rem;
+    width: 7.5rem;
+    margin-top: 1.875rem;
+    }
+
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .contenedorUno {
+        display: none;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+
+    .navBar ul{
+        position:fixed;
+        width: 100%;
+        height: 35vh;
+        background-color: #F2D5EA;
+        top: 80;
+        transition: all .5s;
+        flex-direction: column;
+        justify-items: center;
+        visibility: hidden;
+    }
+
+    .navBar ul li {
+        display: block;
+    }
+
+    .navBar li a{
+        font-size: 1.125rem;
+    }
+
+    #check:checked ~ * ul{
+        visibility: visible;
+    } 
+    
+
+    #check:checked ~ ul {
+        visibility: hidden;
+    } 
+
     .contenedorDos{
         background-image: url("../assets/img/croppedImage_1697125832078.png");
         height: 25rem;
@@ -209,14 +391,15 @@ align-items: center;
     }
 
     .contenedorTres{
-        margin-bottom: 0;
+        grid-template-columns: 18.75rem 25rem;
+        margin: 1.875rem auto;
         height: 18.75rem;
-        gap: 0;
+        gap: .3125rem;
+
     }
     .contenedorTres .contenedorImg{
         height: 18.75rem;
         justify-self: center;
-
 
     }
     .contenedorImg img{
@@ -228,20 +411,21 @@ align-items: center;
     .contenedorTres h2{
         font-size: 1.25rem;
     }
-    
+
     .contenedorTres p{
         font-size: 1rem;
         padding: 10px;
     }
 
     article h3{
+        width: 80%;
         font-size: 1rem;
         padding: .625rem;
-        margin: .625rem;
     }
 
     .contenedorRequisitos{
         margin-top: 0;
+        overflow: hidden;
     }
     .red{
         height: 25rem;
@@ -250,6 +434,18 @@ align-items: center;
 }
 
 @media (max-width: 425px){
+    .logo{
+        height: 6.25rem;
+        width: 6.25rem;
+        margin-top: 1.875rem;
+        margin-left: .9375rem;
+        }
+    
+        .logo img{
+            width: 100%;
+            height: 100%;
+        }
+
     .contenedorDos{
         height: 18.75rem;
     }
@@ -262,7 +458,7 @@ align-items: center;
     .contenedorTres{
         display: flex;
         flex-direction: column;
-        height: 25rem;  
+        height: 25rem;
         margin-top: 2.5rem;
         margin-bottom: 0;
     }
@@ -282,27 +478,27 @@ align-items: center;
     .contenedorImg img{
         height: 12.5rem;
         width: 12.5rem;
-        
+
     }
 
     .contenedorTres p{
         order: 3;
         font-size: 16px;
-        margin: .3125rem;
-        padding: .3125rem;
+        margin: 1.875rem 12px;
         text-align: center;
     }
-    
+
     article h3{
         font-size: 1rem;
-        margin: .75rem
+        margin: auto;
+        margin-bottom: 1.25rem;
     }
 
     .contenedorRequisitos{
         width: 100%;
         line-height: 1.3;
     }
-    
+
     .castracion{
         height: 12.5rem;
         grid-template-columns: 2.5rem 1fr;
@@ -325,12 +521,12 @@ align-items: center;
         width: 2.5rem;
         height: 2.5rem;
     }
-    
+
     .huella img{
         width: 100%;
         height: 100%;
     }
-    
+
     .requisitos h5{
         font-size: 1.125rem;
     }
@@ -375,6 +571,24 @@ align-items: center;
         padding: .9375rem;
     }
 
+    iframe{
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+
+    footer{
+        height: 30vh;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+    footer li{
+        list-style: none;
+        padding: .625rem;
+    }
     @media (max-width: 375px){
         .contenedorTres p{
             margin: .9375rem;
@@ -384,11 +598,26 @@ align-items: center;
         .castracion, .adopcion, .red{
             grid-template-columns: 1.875rem 1fr;
             gap: 0;
+            margin-bottom: 3.75rem;
+        }
+        .castracion{
+            margin-bottom: 5rem;
         }
 
         .huella{
             width: 1.875rem;
             height: 1.875rem;
+        }
+
+        footer{
+            height: 35vh;
+        }
+        .cuidados{
+            margin-bottom: 1.25rem;
+        }
+
+        footer section a{
+            margin-top: 1.25rem;
         }
     }
 }
